@@ -1,0 +1,443 @@
+* {
+  font-family: "Karla", sans-serif;
+}
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 375px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+}
+/* Start Landing */
+
+.landing {
+  /* height: 100vh; */
+  padding-bottom: 200px;
+}
+.landing .container .heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* width: 100%; */
+  position: relative;
+  display: flex;
+}
+.landing nav {
+  position: absolute;
+  right: 10%;
+  top: 30px;
+  font-family: "DM Serif Display", serif;
+}
+.landing nav img {
+  display: none;
+}
+.landing .container .heading .humburger,
+.close {
+  position: relative;
+  display: none;
+  margin-left: 190px;
+}
+@media (max-width: 375px) {
+  .landing .container .heading .humburger {
+    display: inline-block;
+  }
+  .landing .container .heading .humburger.cllll {
+    display: none;
+  }
+  .landing .container .heading {
+    margin-right: 20px;
+    padding-left: 30px;
+  }
+  .close.oppp {
+    display: inline-block;
+  }
+}
+.landing nav a {
+  color: hsl(273, 4%, 51%);
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.landing nav a:hover {
+  color: hsl(270, 9%, 17%);
+}
+.landing nav a.mainLink {
+  color: hsl(270, 9%, 17%);
+  border: 1px solid hsl(270, 9%, 17%);
+  padding: 10px 30px;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+.landing nav a.mainLink:hover {
+  background-color: hsl(270, 9%, 17%);
+  color: white;
+}
+.landing .landingContent {
+  background-color: hsl(256, 26%, 20%);
+  height: 92vh;
+  /* display: flex; */
+}
+.borderTop {
+  background-color: white;
+  width: 130px;
+  height: 1px;
+  top: 100px;
+  position: relative;
+}
+.landing .landingContent h2 {
+  color: white;
+  margin-bottom: 0;
+  font-size: 65px;
+  font-family: "DM Serif Display", serif;
+}
+.landing .landingContent p {
+  color: white;
+}
+.landing .landingContent button {
+  margin-top: 15px;
+  position: absolute;
+  padding: 10px 30px;
+  color: white;
+  background-color: hsl(256, 26%, 20%);
+  border: 1px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.landing .landingContent button:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+}
+.landing .landingContent .photo {
+  position: absolute;
+  right: 10%;
+  top: 108px;
+}
+.landing .landingContent .rightImg {
+  position: absolute;
+  top: -80px;
+  right: 0;
+}
+.landing .landingContent .leftImg {
+  position: relative;
+  left: -130px;
+  bottom: 0;
+}
+.test {
+  width: 45%;
+  margin-top: 150px;
+}
+.landing .landingContent .rightMobile,
+.landing .landingContent .leftMobile {
+  display: none;
+}
+.landing .landingContent .rightMobile {
+  position: absolute;
+  right: 0;
+  bottom: -180px;
+}
+.landing .landingContent .leftMobile {
+  position: absolute;
+  left: 0;
+  top: 450px;
+}
+@media (max-width: 375px) {
+  .landing .landingContent .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .landing .landingContent {
+    text-align: center;
+    height: 100%;
+  }
+  .landing .landingContent .rightImg,
+  .landing .landingContent .leftImg,
+  .borderTop {
+    display: none;
+  }
+  .test {
+    padding-top: 100%;
+    width: 100%;
+    overflow: visible;
+  }
+  .landing .landingContent h2 {
+    font-size: 40px;
+  }
+  .landing .landingContent button {
+    position: relative;
+    margin-bottom: 100px;
+    width: 150px;
+  }
+  .landing .landingContent p {
+    font-size: 16px;
+  }
+  .landing .landingContent .rightMobile,
+  .landing .landingContent .leftMobile {
+    display: block;
+  }
+  .landing {
+    padding-bottom: 100px;
+  }
+  .landing .open {
+    background-color: hsl(270, 9%, 17%);
+    width: 100%;
+    display: block;
+    top: 92px;
+    text-align: center;
+    z-index: 1000;
+    right: 0;
+    height: 100%;
+  }
+  .landing nav {
+    display: none;
+  }
+  .landing nav a {
+    display: block;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .landing nav a.mainLink {
+    color: white;
+    border: 1px solid white;
+    margin-right: 20px;
+  }
+  .landing nav img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* End Landing */
+
+/* Start secound section  */
+.secoundSection {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.borderTop2 {
+  background-color: hsl(273, 4%, 51%);
+  width: 130px;
+  height: 1px;
+  margin: 0px 0 50px;
+}
+.secoundSection h2 {
+  font-size: 55px;
+  font-family: "DM Serif Display", serif;
+}
+.secoundSection .boxContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 40px;
+}
+.secoundSection .boxContainer .box img {
+  width: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.secoundSection .boxContainer .box h4 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-family: "DM Serif Display", serif;
+}
+.secoundSection .boxContainer .box p {
+  /* font-size: 14px; */
+  color: hsl(273, 4%, 51%);
+}
+
+@media (max-width: 375px) {
+  .secoundSection {
+    text-align: center;
+    padding-top: 0;
+  }
+  .borderTop2 {
+    margin-left: 125px;
+  }
+  .secoundSection h2 {
+    font-size: 40px;
+  }
+  .secoundSection .boxContainer {
+    grid-template-columns: auto;
+    /* margin-left: 14px; */
+  }
+}
+/* End secound section  */
+
+/* Start about us  */
+.about {
+  padding-bottom: 100px;
+}
+.aboutUs {
+  background-color: hsl(256, 26%, 20%);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+.aboutUs h2 {
+  float: left;
+  font-size: 40px;
+  font-family: "DM Serif Display", serif;
+  color: white;
+  /* padding: 50px 0 0 60px; */
+  position: absolute;
+  left: 67px;
+  top: 35%;
+  transform: translateY(-40%);
+}
+
+.aboutUs button {
+  font-weight: bold;
+  float: right;
+  position: absolute;
+  top: 50%;
+  right: 67px;
+  transform: translateY(-50%);
+  /* margin: 113px 60px; */
+  /* z-index: 3; */
+  background-color: hsl(256, 26%, 20%);
+  padding: 10px 30px;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.aboutUs button:hover {
+  color: hsl(256, 26%, 20%);
+  background-color: white;
+}
+.aboutUs img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.imgmm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+@media (max-width: 375px) {
+  .aboutUs img {
+    display: none;
+  }
+  .aboutUs {
+    width: 100%;
+    height: 100%;
+  }
+  .aboutUs h2,
+  .aboutUs button {
+    float: none;
+    display: block;
+    position: initial;
+    text-align: center;
+  }
+  .aboutUs h2 {
+    padding: 150px 20px 0;
+  }
+  .aboutUs button {
+    position: absolute;
+    right: 100px;
+    top: 75%;
+  }
+  .imgmm {
+    display: block;
+  }
+}
+/* End about us  */
+
+/* Start footer  */
+
+.footer {
+  background-color: hsl(0, 0%, 98%);
+  position: relative;
+}
+.footer .container .logo {
+  margin: 40px 0 20px;
+}
+.footer .container .icons {
+  float: right;
+  margin-top: 40px;
+}
+.footer .container .icons a {
+  padding-right: 10px;
+  text-decoration: none;
+}
+.footer .container .boxContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  column-gap: 20px;
+}
+
+.footer .container .boxContainer .box h4 {
+  color: hsl(273, 4%, 51%);
+  font-family: "DM Serif Display", serif;
+}
+.footer .container .boxContainer .box a {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+  z-index: 5;
+}
+.footer .container .boxContainer .box a::before {
+  content: "";
+  position: absolute;
+  display: none;
+  height: 2px;
+  width: 93px;
+  background-color: hsl(256, 26%, 20%);
+  left: 0;
+  bottom: 0;
+}
+.footer .container .boxContainer .box a:hover::before {
+  display: block;
+}
+.footer .pattern {
+  position: absolute;
+  top: 0;
+  left: -75px;
+}
+.footerPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* End footer  */
+@media (max-width: 375px) {
+  .footer .pattern {
+    display: none;
+  }
+  .footer {
+    text-align: center;
+    width: 100%;
+  }
+  .footer .container .icons {
+    float: none;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+  .footer .container .logo {
+    margin-top: 100px;
+  }
+  .footer .container .boxContainer {
+    grid-template-columns: auto;
+  }
+  .footer .container .boxContainer .box a:hover::before {
+    display: none;
+  }
+}
